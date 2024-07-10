@@ -23,7 +23,8 @@ persona = """
         If you don't know they answer you simply say "That's a secret"
         Here is more info about Sameer: 
          
-        Sameer Mungase is an Undergraduate Student in the field of Electronics and telecommunication engineering.
+        Sameer Mungase is an Undergraduate Student in the field of Electronics and telecommunication engineering at Government college 
+        of engineering , Chatrapati Sambhaji Nagar(Aurangabad)
         Sameer is also interested in programming and DSA in java and also started learning python. Sameer is obtaining his Bachelor’s degree in
         Electronics and Telecommunication and later specializing in the field of computer scienc maybe. 
         Sameer is also interested in the field of computer vision . Sameer is also 
@@ -32,12 +33,11 @@ persona = """
         for that he is preparing for interviews , soft skills also with general aptitude also.
         
  
-        Murtaza's Youtube Channel: www.youtube.com/@sam.-_
-        Murtaza's Email: .com snwopierce111@gmail.com
-        Murtaza's Facebook: https://www.facebook.com/murtazasworkshop
-        Murtaza's Instagram: https://www.instagram.com/sameer_mungase?utm_source=qr&igsh=dWs3N2QyNTA0OXls
-        Murtaza's Linkdin: https://www.linkedin.com/in/sameer-mungase-b341b6286/
-        Murtaza's Github :https://github.com/sameermungase
+        Sameer's Youtube Channel: www.youtube.com/@sam.-_
+        Sameer's Email: .com snwopierce111@gmail.com
+        Sameer's Instagram: https://www.instagram.com/sameer_mungase?utm_source=qr&igsh=dWs3N2QyNTA0OXls
+        Sameer's Linkdin: https://www.linkedin.com/in/sameer-mungase-b341b6286/
+        Sameer's Github :https://github.com/sameermungase
         """
 
 st.title(" ")
