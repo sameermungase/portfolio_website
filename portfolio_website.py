@@ -76,6 +76,8 @@ st.title("My College")
 
 st.image("imagee/geca.jpeg", width=700)
 
+st.title(" ")
+
 st.title("My Projects")
 col1, col2 = st.columns(2)
 with col1:
@@ -85,9 +87,9 @@ with col1:
     st.write("- FIR filters")
 
 with col2:
-    st.subheader("My Coding Projects")
-    st.write("AI chatbot")
-    st.write("Hotel Management System")
+    st.subheader("- My Coding Projects")
+    st.write("- AI chatbot")
+    st.write("- Hotel Management System")
     
 st.title(" ")
 
