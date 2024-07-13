@@ -76,23 +76,7 @@ st.image("imagee/geca.jpeg", width=700)
 
 
 st.title(" ")
-st.title("Some memories of college")
-col1, col2, col3 = st.columns(3)
 
-with col1:
-    st.image("imagee/img (1).jpg", width=200)
-    st.image("imagee/img (2).jpg", width=200)
-    st.image("imagee/img (3).jpg", width=200)
-
-with col2:
-    st.image("imagee/img (4).jpg", width=200)
-    st.image("imagee/img (5).jpg", width=200)
-    st.image("imagee/img (6).jpg", width=200)
-
-with col3:
-    st.image("imagee/img (7).jpg", width=200)
-    st.image("imagee/img (8).jpg", width=200)
-    st.image("imagee/img (9).jpg", width=200)
 
 st.subheader(" ")
 st.write("Reach me at:")
