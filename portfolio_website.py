@@ -15,7 +15,7 @@ with col1:
     st.title("I am Sameer Mungase")
 
 with col2:
-    st.image("imagee/sam.jpg", width=300)
+    st.image("imagee/sam.jpg", width=200)
 
 persona = """
         You are Sameer AI bot. You help people answer questions about your self (i.e Sameer Mungase).
@@ -65,10 +65,10 @@ st.write(" ")
 
 st.title("My Skills")
 st.slider("DSA", 0, 100, 70)
-st.slider("Core Java", 0, 100, 85)
+st.slider("Core Java", 0, 100, 80)
 st.slider("Linux", 0, 100, 75)
 st.slider("Python", 0 ,100 ,50)
-st.slider("Generative AI" ,0 ,100 ,50)
+st.slider("Computer Network" ,0 ,100 ,50)
 
 st.title(" ")
 
@@ -84,12 +84,13 @@ with col1:
     st.subheader("My Electronics Projects")
     st.write("- Home Appliances Automation")
     st.write("- Trinetra (a device which will help visually impared persons detect obstable")
-    st.write("- FIR filters")
+    st.write("- Smart blind stick using ultrasonic sensor and arduino")
 
 with col2:
     st.subheader("- My Coding Projects")
     st.write("- AI chatbot")
     st.write("- Hotel Management System")
+    st.write("- Portfolio Website")
     
 st.title(" ")
 
