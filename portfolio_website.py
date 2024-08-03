@@ -56,7 +56,7 @@ st.title(" ")
 
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("My recommended learning resourse for computer vision ")
+    st.subheader("Best learning resourses for computer vision and for best AI projects")
 
 with col2:
     st.video("https://youtu.be/k2EahPgl0ho?si=0_QAgPW66W5Ng55X")
@@ -94,8 +94,7 @@ with col2:
     
 st.title(" ")
 
-
 st.subheader(" ")
 st.write("Reach me at:")
-st.title("For any inquiries, email at:")
-st.subheader("snowpierce.222@gmail.com")
+st.title("For any inquiries,email at:")
+st.subheader("sameer49@geca.ac.in")
