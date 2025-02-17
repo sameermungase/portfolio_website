@@ -350,14 +350,50 @@ with st.container():
 st.markdown("---")
 st.header("📅 Timeline")
 st.markdown("""
+<style>
+.timeline-item {
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 2px solid #ff4b4b;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff4b4b;
+}
+.timeline-item h4 {
+    color: #ff4b4b;
+    margin: 0;
+}
+.timeline-item p {
+    margin: 5px 0;
+    color: #2c3e50;
+}
+</style>
 <div class="timeline">
     <div class="timeline-item">
         <h4>2025</h4>
         <p>Tech Mahindra Internship</p>
+        <p>Completing B.Tech in Electronics and Telecommunication</p>
     </div>
     <div class="timeline-item">
         <h4>2024</h4>
         <p>CodeAlpha Internship</p>
+    </div>
+    <div class="timeline-item">
+        <h4>2021</h4>
+        <p>Started B.Tech at Government College of Engineering, Aurangabad</p>
+        <p>Completed HSC with 87.00%</p>
+    </div>
+    <div class="timeline-item">
+        <h4>2019</h4>
+        <p>Completed SSC with 92.80% from Janata Vidyalaya Yeola</p>
     </div>
 </div>
 """, unsafe_allow_html=True)
