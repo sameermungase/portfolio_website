@@ -38,6 +38,13 @@ st.markdown("""
         color: #0066cc;
         font-size: 0.9em;
     }
+    a {
+        color: #ff4b4b;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -144,30 +151,10 @@ st.markdown("""
 st.markdown("---")
 st.header("🛠️ My Projects")
 
-# Custom CSS for project cards
-st.markdown("""
-    <style>
-    .project-card {
-        background-color: #f0f2f6;
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-    .project-card h4 {
-        color: #ff4b4b;
-        margin-bottom: 10px;
-    }
-    .tools {
-        color: #0066cc;
-        font-size: 0.9em;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
 # SplitBook Project
 st.markdown("""
 <div>
-    <h4>🔄 SplitBook - Expense Management System</h4>
+    <h4>🔄 <a href="https://github.com/sameermungase/SplitBook" target="_blank">SplitBook - Expense Management System</a></h4>
     <p>SplitBook is a comprehensive expense management system designed to simplify the process of tracking and 
     splitting expenses among multiple users. The application features a user-friendly dashboard for real-time 
     expense monitoring, detailed reporting capabilities for financial insights. Built using Spring Boot, it ensures 
@@ -179,7 +166,7 @@ st.markdown("""
 # Hotel Management System
 st.markdown("""
 <div>
-    <h4>🏨 Hotel Management System</h4>
+    <h4>🏨 <a href="https://github.com/sameermungase/Hotel-Management-System" target="_blank">Hotel Management System</a></h4>
     <p>Implemented a hotel management system using the java frameworks and core java concepts in which added 
     important features like check room availability, make reservations, payment processing, etc. Gained hands-on 
     experience in real-time data handling and applied core programming concepts effectively.</p>
@@ -190,7 +177,7 @@ st.markdown("""
 # FileGuard Project
 st.markdown("""
 <div>
-    <h4>🔒 FileGuard - File Encryption System</h4>
+    <h4>🔒 <a href="https://github.com/sameermungase/FileGuard" target="_blank">FileGuard - File Encryption System</a></h4>
     <p>FileGuard is a Java-based application designed for managing hidden files. It features user registration and login 
     with OTP authentication, and allows users to hide and unhide files securely. The application interacts with a 
     MySQL database to store user and file data, ensuring data integrity and security.</p>
