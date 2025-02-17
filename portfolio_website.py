@@ -404,7 +404,6 @@ with st.expander("Chat with Sameer's AI Assistant"):
 st.markdown("---")
 st.markdown('<h2 class="skills-header">🚀 Skills & Technologies</h2>', unsafe_allow_html=True)
 
-# Create three columns for different skill categories
 tech_col1, tech_col2, tech_col3 = st.columns(3)
 
 with tech_col1:
@@ -422,21 +421,41 @@ with tech_col1:
 
 with tech_col2:
     st.markdown("""
-    #### 🛠️ Tools & Technologies
-    - Linux
-    - Git & GitHub
-    - AWS
-    - JetBrains IntelliJ IDEA
-    """)
+    <div class="skills-card">
+        <h4>🛠️ Tools & Technologies</h4>
+        <ul>
+            <li>Linux</li>
+            <li>Git & GitHub</li>
+            <li>AWS</li>
+            <li>JetBrains IntelliJ IDEA</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
 
 with tech_col3:
     st.markdown("""
-    #### 🎯 Hobbies
-    - Mobile Photography
-    - Reading
-    - Listening to Music
-    - Learning New Skills
-    """)
+    <div class="skills-card">
+        <h4>🎯 Hobbies</h4>
+        <ul>
+            <li>Mobile Photography</li>
+            <li>Reading</li>
+            <li>Listening to Music</li>
+            <li>Learning New Skills</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Electronics Projects Section (also updated to use card styling)
+st.markdown("""
+<div class="skills-card">
+    <h4>⚡ Electronics Projects</h4>
+    <ul>
+        <li>Home Appliances Automation</li>
+        <li>Trinetra - Visual Aid Device</li>
+        <li>Smart Blind Stick</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
 
 # Experience Section
 st.markdown("---")
@@ -505,16 +524,6 @@ st.markdown("""
     <p class="tools"><strong>Tools Used:</strong> Java, JavaFX, MySQL, Maven, SMTP API</p>
 </div>
 """, unsafe_allow_html=True)
-
-# Electronics Projects Section
-st.subheader("⚡ Electronics Projects")
-electronics_projects = [
-    "Home Appliances Automation",
-    "Trinetra - Visual Aid Device",
-    "Smart Blind Stick"
-]
-for project in electronics_projects:
-    st.markdown(f"- {project}")
 
 # College Section
 st.markdown("---")
