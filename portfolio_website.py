@@ -65,6 +65,21 @@ st.markdown("""
         color: #0066cc;
         font-weight: bold;
     }
+    .highlight-text {
+        background: linear-gradient(120deg, #ff4b4b20 0%, #ff4b4b20 100%);
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+    }
+    .card {
+        border: 1px solid #eee;
+        padding: 1.5rem;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    .card:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+    }
     </style>
 """, unsafe_allow_html=True)
 
