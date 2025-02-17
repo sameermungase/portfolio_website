@@ -7,7 +7,7 @@ import pandas as pd
 # Page configuration
 st.set_page_config(
     page_title="Sameer Mungase | Portfolio",
-    page_icon="👨‍💻",
+    page_icon="∞",
     layout="wide"
 )
 
