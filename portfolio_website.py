@@ -45,7 +45,7 @@ st.markdown("""
         text-decoration: none;
     }
     a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
     .education-item {
         padding: 20px;
