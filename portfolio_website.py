@@ -471,5 +471,5 @@ def main():
     timeline_section()
     contact_section()
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
