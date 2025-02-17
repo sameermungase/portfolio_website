@@ -583,3 +583,159 @@ st.markdown(
     "<p style='text-align: center; color: grey;'>© 2024 Sameer Mungase. All rights reserved.</p>", 
     unsafe_allow_html=True
 )
+
+# Update the CSS with new color palette
+st.markdown("""
+    <style>
+    /* Color Variables */
+    :root {
+        --primary-color: #2D31FA;  /* Royal Blue */
+        --secondary-color: #5D8BF4;  /* Light Blue */
+        --accent-color: #FF5C58;  /* Coral */
+        --gradient-1: linear-gradient(45deg, #2D31FA, #5D8BF4);
+        --gradient-2: linear-gradient(45deg, #FF5C58, #FF9F59);
+        --text-dark: #1a1a1a;
+        --text-light: #ffffff;
+        --card-bg: #ffffff;
+    }
+
+    /* Project Cards */
+    .project-card {
+        background: var(--card-bg);
+        border-radius: 20px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid var(--primary-color);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+    .project-card:hover {
+        transform: translateX(10px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .project-card h4 {
+        color: var(--primary-color);
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    .project-card p {
+        color: var(--text-dark);
+        line-height: 1.6;
+    }
+
+    /* Experience Cards */
+    .experience-item {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid var(--accent-color);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .experience-item h4 {
+        color: var(--accent-color);
+    }
+    .experience-item p, .experience-item li {
+        color: var(--text-dark);
+    }
+
+    /* Skills Cards */
+    .skills-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px 0;
+        border-left: 4px solid var(--secondary-color);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .skills-card h4 {
+        color: var(--secondary-color);
+    }
+    .skills-card ul {
+        color: var(--text-dark);
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .skills-card li {
+        padding: 5px 0;
+        color: var(--text-dark);
+    }
+
+    /* Timeline Items */
+    .timeline-item {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 15px 0;
+        border-left: 4px solid var(--secondary-color);
+    }
+    .timeline-item::before {
+        background: var(--gradient-1);
+    }
+    .timeline-item h4 {
+        color: var(--secondary-color);
+    }
+    .timeline-item p {
+        color: var(--text-dark);
+    }
+
+    /* Education Cards */
+    .education-item {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid var(--primary-color);
+    }
+    .education-item h4 {
+        color: var(--primary-color);
+    }
+    .education-item p {
+        color: var(--text-dark);
+    }
+    .education-item .percentage {
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+
+    /* Section Headers */
+    h1, h2, h3, h4 {
+        background: var(--gradient-1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold !important;
+    }
+
+    /* Download Button */
+    .download-button {
+        background: var(--gradient-2);
+        color: var(--text-light) !important;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .download-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Social Links */
+    .social-link {
+        background: var(--gradient-1);
+        color: var(--text-light) !important;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+    .social-link:hover {
+        background: var(--gradient-2);
+    }
+
+    /* Contact Form Button */
+    .stButton > button {
+        background: var(--gradient-2) !important;
+        color: var(--text-light) !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
