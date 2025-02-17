@@ -45,6 +45,21 @@ st.markdown("""
     a:hover {
         text-decoration: underline;
     }
+    .education-item {
+        padding: 20px;
+        margin: 10px 0;
+        border-left: 3px solid #ff4b4b;
+        background-color: #f8f9fa;
+        border-radius: 0 10px 10px 0;
+    }
+    .education-item h4 {
+        color: #ff4b4b;
+        margin-bottom: 5px;
+    }
+    .education-item .percentage {
+        color: #0066cc;
+        font-weight: bold;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -62,7 +77,7 @@ with header_col1:
     st.title("I'm Sameer Mungase")
     st.markdown("""
         🎓 Electronics & Telecommunication Engineering Student  
-        💻 Passionate about Programming & Computer Vision  
+        💻 Passionate about Programming & Development   
         🌟 Always eager to learn and grow
     """)
 with header_col2:
@@ -81,15 +96,28 @@ with st.expander("Chat with Sameer's AI Assistant"):
         Sameer Mungase is an Undergraduate Student in the field of Electronics and telecommunication engineering at Government college 
         of engineering , Chatrapati Sambhaji Nagar(Aurangabad)
         Sameer is also interested in programming and DSA in java and also started learning python. Sameer is obtaining his Bachelor's degree in
-        Electronics and Telecommunication and later specializing in the field of computer scienc maybe. 
+        Electronics and Telecommunication and later specializing in the field of computer scienc. 
         Sameer is also interested in the field of computer vision . Sameer is also 
-        working on his core java skills . Sameer is  also preparing for the placements in the field of software 
+        working on his core java skills and Development skills . Sameer is  also preparing for the placements in the field of software 
         engineering , and core electronics companies also ,
-        for that he is preparing for interviews , soft skills also with general aptitude also.
-        
+        for that he is preparing for interviews , soft skills also with general aptitude also,he is also currently working at Tech Mahindra as a Technical support Trainee.
+        These are some languages and Technologies that Sameer has worked on:
+        - Java
+        - Python
+        - C++
+        - SQL
+        - HTML/CSS
+        - JavaScript
+        - Linux
+        - Git & GitHub
+        - AWS
+        - JetBrains IntelliJ IDEA
+        - Eclipse IDE
+        - Visual Studio Code
+        - MySQL
  
-        Sameer's Youtube Channel: www.youtube.com/@sam.-_
-        Sameer's Email: .com snwopierce111@gmail.com
+        
+        Sameer's Email: sbmungase2003@gmail.com
         Sameer's Instagram: https://www.instagram.com/sameer_mungase?utm_source=qr&igsh=dWs3N2QyNTA0OXls
         Sameer's Linkdin: https://www.linkedin.com/in/sameer-mungase-b341b6286/
         Sameer's Github :https://github.com/sameermungase
@@ -217,6 +245,61 @@ for project in electronics_projects:
 st.markdown("---")
 st.header("🎓 My College")
 st.image("imagee/geca.jpeg", use_container_width=True)
+
+# Education Section
+st.markdown("---")
+st.header("📚 Education")
+
+# Add custom CSS for education cards
+st.markdown("""
+    <style>
+    .education-item {
+        padding: 20px;
+        margin: 10px 0;
+        border-left: 3px solid #ff4b4b;
+        background-color: #f8f9fa;
+        border-radius: 0 10px 10px 0;
+    }
+    .education-item h4 {
+        color: #ff4b4b;
+        margin-bottom: 5px;
+    }
+    .education-item .percentage {
+        color: #0066cc;
+        font-weight: bold;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# B.Tech
+st.markdown("""
+<div class="education-item">
+    <h4>Bachelor of Technology</h4>
+    <p><em>Electronics and Telecommunication Engineering (2021-2025)</em></p>
+    <p>Government College Of Engineering Aurangabad, Chhatrapati Sambhajinagar</p>
+    <p class="percentage">Percentage: 77.23%</p>
+</div>
+""", unsafe_allow_html=True)
+
+# HSC
+st.markdown("""
+<div class="education-item">
+    <h4>Higher Secondary Certification (HSC)</h4>
+    <p><em>2020-2021</em></p>
+    <p>Sanjivani Junior College, Kopargon</p>
+    <p class="percentage">Percentage: 87.00%</p>
+</div>
+""", unsafe_allow_html=True)
+
+# SSC
+st.markdown("""
+<div class="education-item">
+    <h4>Secondary School Certification (SSC)</h4>
+    <p><em>2018-2019</em></p>
+    <p>Janata Vidyalaya Yeola</p>
+    <p class="percentage">Percentage: 92.80%</p>
+</div>
+""", unsafe_allow_html=True)
 
 # Contact Section
 st.markdown("---")
