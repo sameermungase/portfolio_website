@@ -285,60 +285,20 @@ st.markdown("""
 st.markdown("""
     <style>
     /* Modern Gradient Headings */
-    .header-main {
-        background: linear-gradient(120deg, #FF6B6B, #4ECDC4);
+    .header-main, .skills-header, .experience-header, .projects-header, 
+    .college-header, .timeline-header, .education-header, .contact-header {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59);  /* Coral to Orange gradient */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 700;
     }
 
-    .skills-header {
-        background: linear-gradient(120deg, #A8E6CF, #3BB4C1);
+    /* Update h1-h4 general styling to match */
+    h1, h2, h3, h4 {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-weight: 700;
-    }
-
-    .experience-header {
-        background: linear-gradient(120deg, #FFD93D, #FF6B6B);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
-    }
-
-    .projects-header {
-        background: linear-gradient(120deg, #6C63FF, #FF6584);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
-    }
-
-    .college-header {
-        background: linear-gradient(120deg, #45B7D1, #DFBFFF);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
-    }
-
-    .timeline-header {
-        background: linear-gradient(120deg, #FF9A9E, #FAD0C4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
-    }
-
-    .education-header {
-        background: linear-gradient(120deg, #96E6A1, #D4FC79);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
-    }
-
-    .contact-header {
-        background: linear-gradient(120deg, #FD6E6A, #FFC600);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
+        font-weight: bold !important;
     }
     </style>
 """, unsafe_allow_html=True)
