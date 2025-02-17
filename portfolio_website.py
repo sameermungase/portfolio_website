@@ -19,6 +19,11 @@ st.markdown("""
         font-size: 3rem !important;
         text-align: center;
     }
+    .experience-item {
+        padding: 10px;
+        border-left: 2px solid #ff4b4b;
+        margin: 10px 0;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -90,6 +95,36 @@ with skills_col2:
     st.subheader("Other Skills")
     st.progress(50, "Python")
     st.progress(50, "Computer Networks")
+
+# Experience Section
+st.markdown("---")
+st.header("💼 Experience")
+
+# Software Development Intern
+st.markdown("""
+<div class="experience-item">
+    <h4>Software Development and AIML Intern | Makers Lab, Tech Mahindra - Pune</h4>
+    <p><em>Jan 2025 - Present</em></p>
+    <ul>
+        <li>Currently working as a development trainee with a focus on Java programming and basic development tasks</li>
+        <li>Acquired hands-on experience in Java programming, debugging, and understanding core development workflows</li>
+        <li>Developing expertise in software lifecycle management, professional coding practices, and JavaScript development</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
+
+# Java Programming Intern
+st.markdown("""
+<div class="experience-item">
+    <h4>Java Programming Intern | Codealpha - Virtual</h4>
+    <p><em>June 2024 - Aug 2024</em></p>
+    <ul>
+        <li>Gained hands-on experience in Java development and core java concepts during my internship</li>
+        <li>Successfully contributed to projects by implementing Java concepts like Collection Framework, Object Oriented Programming and more</li>
+        <li>Learned about benefits of learning in public and how to use platforms like Git, GitHub which are version control systems</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
 
 # Projects Section
 st.markdown("---")
