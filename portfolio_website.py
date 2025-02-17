@@ -146,7 +146,7 @@ with proj_col2:
 # College Section
 st.markdown("---")
 st.header("🎓 My College")
-st.image("imagee/geca.jpeg", use_column_width=True)
+st.image("imagee/geca.jpeg", use_container_width=True)
 
 # Contact Section
 st.markdown("---")
