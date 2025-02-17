@@ -11,61 +11,77 @@ st.set_page_config(
     layout="wide"
 )
 
-# Single consolidated CSS block
+# Add custom CSS
 st.markdown("""
     <style>
-    /* Base styles */
     .main {
         padding: 2rem;
     }
-
-    /* Text gradients */
-    .gradient-text {
-        background: linear-gradient(45deg, #FF5C58, #FF9F59);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
+    .stTitle {
+        font-size: 3rem !important;
+        text-align: center;
     }
-
-    /* Override Streamlit's default headers */
-    .css-10trblm, .css-1q8dd3e, h1, h2, h3, h4 {
-        background: linear-gradient(45deg, #FF5C58, #FF9F59) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        font-weight: 700 !important;
+    .experience-item {
+        padding: 10px;
+        border-left: 2px solid #ff4b4b;
+        margin: 10px 0;
     }
-
-    /* Cards base style */
-    .card-base {
-        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
-        border-radius: 15px;
-        padding: 25px;
-        margin: 20px 0;
-        border-left: 4px solid #FF5C58;
-        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    .project-card {
+        background-color:rgb(243, 112, 140);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .project-card h4 {
+        color: #ff4b4b;
+        margin-bottom: 10px;
+    }
+    .tools {
+        color: #0066cc;
+        font-size: 0.9em;
+    }
+    a {
+        color: #7F00FF;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .education-item {
+        padding: 20px;
+        margin: 10px 0;
+        border-left: 3px solid #ff4b4b;
+        background-color: #ffffff;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .education-item h4 {
+        color: #ff4b4b;
+        margin-bottom: 5px;
+    }
+    .education-item p {
+        color: #2c3e50;
+        margin: 5px 0;
+    }
+    .education-item .percentage {
+        color: #0066cc;
+        font-weight: bold;
+    }
+    .highlight-text {
+        background: linear-gradient(120deg, #ff4b4b20 0%, #ff4b4b20 100%);
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+    }
+    .card {
+        border: 1px solid #eee;
+        padding: 1.5rem;
+        border-radius: 10px;
         transition: all 0.3s ease;
     }
-    .card-base:hover {
-        transform: translateX(10px);
-        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
-        background: linear-gradient(145deg, #ffe5e5, #ffd5d5);
+    .card:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
     }
-
-    /* Extend card styles */
-    .skills-card, .project-card, .experience-item, .education-item {
-        composes: card-base;
-    }
-
-    /* Card content */
-    .card-base h4 {
-        color: #FF5C58;
-        margin-bottom: 15px;
-    }
-    .card-base p, .card-base li {
-        color: #2C3E50;
-    }
-
-    /* Download button */
     .download-button {
         background: linear-gradient(45deg, #FF5C58, #FF9F59);
         color: white;
@@ -78,6 +94,7 @@ st.markdown("""
         transition: all 0.3s ease;
         border: none;
         box-shadow: 0 4px 15px rgba(255, 92, 88, 0.2);
+        font-size: 16px;
         text-transform: uppercase;
         letter-spacing: 1px;
     }
@@ -86,27 +103,9 @@ st.markdown("""
         box-shadow: 0 6px 20px rgba(255, 92, 88, 0.3);
         transform: translateY(-3px);
     }
-
-    /* Social links */
-    .social-link {
-        background: linear-gradient(45deg, #FF5C58, #FF9F59);
-        padding: 10px 20px;
-        border-radius: 25px;
-        color: white !important;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    .social-link:hover {
-        background: linear-gradient(45deg, #FF9F59, #FF5C58);
-        transform: translateY(-3px);
-    }
-
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .card-base {
-            margin: 10px 0;
-            padding: 15px;
-        }
+    .download-button svg {
+        margin-right: 8px;
+        vertical-align: middle;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -240,6 +239,25 @@ st.markdown("""
         font-weight: bold !important;
     }
 
+    /* Social Links */
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    .social-link {
+        background: linear-gradient(45deg, #7F00FF, #ff4b4b);
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: white !important;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
     /* Skills Section */
     .skills-card {
         background: white;
@@ -253,17 +271,12 @@ st.markdown("""
         box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
 
-    /* Electronics List */
-    .electronics-list {
-        color: #2C3E50;
-        margin: 10px 0;
-        padding-left: 20px;
-    }
-    .electronics-list li {
-        margin: 8px 0;
-        line-height: 1.5;
-        font-size: 1rem;
-        color: #2C3E50;
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .modern-card, .project-card, .experience-item, .education-item {
+            margin: 10px 0;
+            padding: 15px;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -640,3 +653,185 @@ st.markdown(
     "<p style='text-align: center; color: grey;'>© 2024 Sameer Mungase. All rights reserved.</p>", 
     unsafe_allow_html=True
 )
+
+# Update the CSS with new color palette
+st.markdown("""
+    <style>
+    /* Color Variables */
+    :root {
+        --primary-color: #2D31FA;  /* Royal Blue */
+        --secondary-color: #5D8BF4;  /* Light Blue */
+        --accent-color: #FF5C58;  /* Coral */
+        --gradient-1: linear-gradient(45deg, #2D31FA, #5D8BF4);
+        --gradient-2: linear-gradient(45deg, #FF5C58, #FF9F59);
+        --text-dark: #1a1a1a;
+        --text-light: #ffffff;
+        --card-bg: #ffffff;
+    }
+
+    /* Skills Cards */
+    .skills-card {
+        background: linear-gradient(145deg, #ffffff, #fff5f5);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px 0;
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    }
+    .skills-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
+    }
+    .skills-card h4 {
+        color: #FF5C58;
+    }
+    .skills-card ul li {
+        color: #2C3E50;
+    }
+
+    /* Project Cards */
+    .project-card {
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
+        border-radius: 20px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    }
+    .project-card:hover {
+        transform: translateX(10px);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #ffe5e5, #ffd5d5);
+    }
+    .project-card h4 {
+        color: #FF5C58;
+    }
+    .project-card p {
+        color: #2C3E50;
+    }
+
+    /* Experience Cards */
+    .experience-item {
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
+        border-radius: 15px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    }
+    .experience-item:hover {
+        transform: translateX(10px);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #ffe5e5, #ffd5d5);
+    }
+    .experience-item h4 {
+        color: #FF5C58;
+    }
+    .experience-item p, .experience-item li {
+        color: #2C3E50;
+    }
+
+    /* Education Cards */
+    .education-item {
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
+        border-radius: 15px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    }
+    .education-item:hover {
+        transform: translateX(10px);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #ffe5e5, #ffd5d5);
+    }
+    .education-item h4 {
+        color: #FF5C58;
+    }
+    .education-item p {
+        color: #2C3E50;
+    }
+    .education-item .percentage {
+        color: #FF5C58;
+        font-weight: bold;
+    }
+
+    /* Section Headers */
+    h1, h2, h3, h4 {
+        background: var(--gradient-1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold !important;
+    }
+
+    /* Download Button */
+    .download-button {
+        background: var(--gradient-2);
+        color: var(--text-light) !important;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .download-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Social Links */
+    .social-link {
+        background: var(--gradient-1);
+        color: var(--text-light) !important;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+    .social-link:hover {
+        background: var(--gradient-2);
+    }
+
+    /* Contact Form Button */
+    .stButton > button {
+        background: var(--gradient-2) !important;
+        color: var(--text-light) !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Update the CSS for headers and subheaders
+st.markdown("""
+    <style>
+    /* Headers and Subheaders */
+    .header-text, .subheader-text {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    /* Override Streamlit's default blue headers */
+    .css-10trblm, .css-1q8dd3e {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        font-weight: 700 !important;
+    }
+
+    /* Specific header styles */
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4 {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    /* Links in headers */
+    .stMarkdown a {
+        color: #FF5C58;
+    }
+    .stMarkdown a:hover {
+        color: #FF9F59;
+    }
+    </style>
+""", unsafe_allow_html=True)
