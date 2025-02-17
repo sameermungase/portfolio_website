@@ -110,6 +110,155 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Add this enhanced CSS at the beginning after your existing CSS
+st.markdown("""
+    <style>
+    /* Modern Card Design */
+    .modern-card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        padding: 25px;
+        margin: 15px 0;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .modern-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Project Cards */
+    .project-card {
+        background: linear-gradient(145deg, #ffffff, #f5f5f5);
+        border-radius: 20px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid #7F00FF;
+        transition: all 0.3s ease;
+    }
+    .project-card:hover {
+        transform: translateX(10px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .project-card h4 {
+        color: #7F00FF;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    /* Experience Cards */
+    .experience-item {
+        background: linear-gradient(145deg, #ffffff, #f8f9fa);
+        border-radius: 15px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid #ff4b4b;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .experience-item:hover {
+        transform: translateX(10px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Timeline Enhancement */
+    .timeline-item {
+        background: linear-gradient(145deg, #ffffff, #f8f9fa);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 15px 0;
+        border-left: 4px solid #7F00FF;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .timeline-item::before {
+        background: linear-gradient(45deg, #7F00FF, #ff4b4b);
+        box-shadow: 0 0 10px rgba(127,0,255,0.5);
+    }
+
+    /* Education Cards */
+    .education-item {
+        background: linear-gradient(145deg, #ffffff, #f8f9fa);
+        border-radius: 15px;
+        padding: 25px;
+        margin: 20px 0;
+        border-left: 4px solid #7F00FF;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .education-item:hover {
+        transform: translateX(10px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Contact Form Styling */
+    .stTextInput > div > div {
+        border-radius: 10px !important;
+    }
+    .stTextArea > div > div {
+        border-radius: 10px !important;
+    }
+    .stButton > button {
+        background: linear-gradient(45deg, #7F00FF, #ff4b4b) !important;
+        color: white !important;
+        border: none !important;
+        padding: 15px 30px !important;
+        border-radius: 25px !important;
+        font-weight: bold !important;
+        transition: all 0.3s ease !important;
+    }
+    .stButton > button:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+    }
+
+    /* Section Headers */
+    h1, h2, h3, h4 {
+        background: linear-gradient(45deg, #7F00FF, #ff4b4b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold !important;
+    }
+
+    /* Social Links */
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    .social-link {
+        background: linear-gradient(45deg, #7F00FF, #ff4b4b);
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: white !important;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Skills Section */
+    .skills-card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .skills-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .modern-card, .project-card, .experience-item, .education-item {
+            margin: 10px 0;
+            padding: 15px;
+        }
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # API Configuration
 api_key = st.secrets["GOOGLE_API_KEY"]
 # api_key =""
@@ -198,12 +347,16 @@ tech_col1, tech_col2, tech_col3 = st.columns(3)
 
 with tech_col1:
     st.markdown("""
-    #### 💻 Programming Languages
-    - Java
-    - SQL
-    - JavaScript (Basic)
-    - HTML/CSS
-    """)
+    <div class="skills-card">
+        <h4>💻 Programming Languages</h4>
+        <ul>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>JavaScript (Basic)</li>
+            <li>HTML/CSS</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
 
 with tech_col2:
     st.markdown("""
@@ -259,8 +412,8 @@ st.header("🛠️ My Projects")
 
 # SplitBook Project
 st.markdown("""
-<div>
-    <h4>🔄 <a href="https://github.com/sameermungase/SplitBook" target="_blank">SplitBook - Expense Management System</a></h4>
+<div class="project-card">
+    <h4>🔄 SplitBook - Expense Management System</h4>
     <p>SplitBook is a comprehensive expense management system designed to simplify the process of tracking and 
     splitting expenses among multiple users. The application features a user-friendly dashboard for real-time 
     expense monitoring, detailed reporting capabilities for financial insights. Built using Spring Boot, it ensures 
@@ -271,8 +424,8 @@ st.markdown("""
 
 # Hotel Management System
 st.markdown("""
-<div>
-    <h4>🏨 <a href="https://github.com/sameermungase/codealpha_tasks.git" target="_blank">Hotel Management System</a></h4>
+<div class="project-card">
+    <h4>🏨 Hotel Management System</h4>
     <p>Implemented a hotel management system using the java frameworks and core java concepts in which added 
     important features like check room availability, make reservations, payment processing, etc. Gained hands-on 
     experience in real-time data handling and applied core programming concepts effectively.</p>
@@ -282,8 +435,8 @@ st.markdown("""
 
 # FileGuard Project
 st.markdown("""
-<div>
-    <h4>🔒 <a href="https://github.com/sameermungase/FileGuard" target="_blank">FileGuard - File Encryption System</a></h4>
+<div class="project-card">
+    <h4>🔒 FileGuard - File Encryption System</h4>
     <p>FileGuard is a Java-based application designed for managing hidden files. It features user registration and login 
     with OTP authentication, and allows users to hide and unhide files securely. The application interacts with a 
     MySQL database to store user and file data, ensuring data integrity and security.</p>
@@ -399,8 +552,13 @@ contact_col1, contact_col2, contact_col3 = st.columns(3)
 
 with contact_col1:
     st.markdown("#### Social Links")
-    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/sameer-mungase-b341b6286/)")
-    st.markdown("[📺 YouTube](https://www.youtube.com/@sam.-_)")
+    st.markdown("""
+    <div class="social-links">
+        <a href="https://linkedin.com/in/sameer-mungase-b341b6286/" class="social-link">LinkedIn</a>
+        <a href="https://github.com/sameermungase" class="social-link">GitHub</a>
+        <a href="https://instagram.com/sameer_mungase" class="social-link">Instagram</a>
+    </div>
+    """, unsafe_allow_html=True)
     
 with contact_col2:
     st.markdown("#### More Links")
