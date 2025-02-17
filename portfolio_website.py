@@ -24,6 +24,20 @@ st.markdown("""
         border-left: 2px solid #ff4b4b;
         margin: 10px 0;
     }
+    .project-card {
+        background-color: #f0f2f6;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .project-card h4 {
+        color: #ff4b4b;
+        margin-bottom: 10px;
+    }
+    .tools {
+        color: #0066cc;
+        font-size: 0.9em;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -129,19 +143,70 @@ st.markdown("""
 # Projects Section
 st.markdown("---")
 st.header("🛠️ My Projects")
-proj_col1, proj_col2 = st.columns(2)
 
-with proj_col1:
-    with st.container():
-        st.subheader("⚡ Electronics Projects")
-        for project in ["Home Appliances Automation", "Trinetra - Visual Aid Device", "Smart Blind Stick"]:
-            st.markdown(f"- {project}")
+# Custom CSS for project cards
+st.markdown("""
+    <style>
+    .project-card {
+        background-color: #f0f2f6;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .project-card h4 {
+        color: #ff4b4b;
+        margin-bottom: 10px;
+    }
+    .tools {
+        color: #0066cc;
+        font-size: 0.9em;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
-with proj_col2:
-    with st.container():
-        st.subheader("💻 Software Projects")
-        for project in ["AI Chatbot", "Hotel Management System", "Portfolio Website"]:
-            st.markdown(f"- {project}")
+# SplitBook Project
+st.markdown("""
+<div class="project-card">
+    <h4>🔄 SplitBook - Expense Management System</h4>
+    <p>SplitBook is a comprehensive expense management system designed to simplify the process of tracking and 
+    splitting expenses among multiple users. The application features a user-friendly dashboard for real-time 
+    expense monitoring, detailed reporting capabilities for financial insights. Built using Spring Boot, it ensures 
+    robust performance and scalability for managing personal and group finances efficiently.</p>
+    <p class="tools"><strong>Tools Used:</strong> Spring boot, Java, Hibernate, Maven, MySQL</p>
+</div>
+""", unsafe_allow_html=True)
+
+# Hotel Management System
+st.markdown("""
+<div class="project-card">
+    <h4>🏨 Hotel Management System</h4>
+    <p>Implemented a hotel management system using the java frameworks and core java concepts in which added 
+    important features like check room availability, make reservations, payment processing, etc. Gained hands-on 
+    experience in real-time data handling and applied core programming concepts effectively.</p>
+    <p class="tools"><strong>Tools Used:</strong> Core Java, Object Oriented Programming, Collection Framework, MySQL</p>
+</div>
+""", unsafe_allow_html=True)
+
+# FileGuard Project
+st.markdown("""
+<div class="project-card">
+    <h4>🔒 FileGuard - File Encryption System</h4>
+    <p>FileGuard is a Java-based application designed for managing hidden files. It features user registration and login 
+    with OTP authentication, and allows users to hide and unhide files securely. The application interacts with a 
+    MySQL database to store user and file data, ensuring data integrity and security.</p>
+    <p class="tools"><strong>Tools Used:</strong> Java, JavaFX, MySQL, Maven, SMTP API</p>
+</div>
+""", unsafe_allow_html=True)
+
+# Electronics Projects Section
+st.subheader("⚡ Electronics Projects")
+electronics_projects = [
+    "Home Appliances Automation",
+    "Trinetra - Visual Aid Device",
+    "Smart Blind Stick"
+]
+for project in electronics_projects:
+    st.markdown(f"- {project}")
 
 # College Section
 st.markdown("---")
