@@ -330,8 +330,8 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 # Header Section
 header_col1, header_col2 = st.columns([2, 1])
 with header_col1:
-    st.markdown("### Hello there! 👋")
-    st.title("I'm Sameer Mungase")
+    st.markdown('<p class="greeting">Hello there! 👋</p>', unsafe_allow_html=True)
+    st.markdown('<h1 class="name-title">I\'m Sameer Mungase</h1>', unsafe_allow_html=True)
     st.markdown("""
         🎓 Electronics & Telecommunication Engineering Student  
         💻 Passionate about Programming & Development   
@@ -355,7 +355,7 @@ with header_col2:
 
 # AI Chatbot Section
 st.markdown("---")
-st.header("💬 Let's Chat!")
+st.markdown('<h2 class="chat-header">💬 Let\'s Chat!</h2>', unsafe_allow_html=True)
 with st.expander("Chat with Sameer's AI Assistant"):
     persona = """
         You are Sameer AI bot. You help people answer questions about your self (i.e Sameer Mungase).
