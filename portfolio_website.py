@@ -343,6 +343,23 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Add to your CSS
+st.markdown("""
+    <style>
+    .electronics-list {
+        color: #2C3E50;
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+    .electronics-list li {
+        margin: 8px 0;
+        line-height: 1.5;
+        font-size: 1rem;
+        color: #2C3E50;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # API Configuration
 api_key = st.secrets["GOOGLE_API_KEY"]
 # api_key =""
@@ -505,11 +522,12 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Electronics Projects Section (moved here)
+# Electronics Projects Section
 st.markdown('<h3 class="subsection-header">⚡ Electronics Projects</h3>', unsafe_allow_html=True)
 st.markdown("""
 <div class="project-card">
-    <ul>
+    <h4>Electronics Hardware Projects</h4>
+    <ul class="electronics-list">
         <li>Home Appliances Automation</li>
         <li>Trinetra - Visual Aid Device</li>
         <li>Smart Blind Stick</li>
