@@ -1,6 +1,8 @@
 import google.generativeai as genai
 # import os
 import streamlit as st
+import plotly.express as px
+import pandas as pd
 
 # Page configuration
 st.set_page_config(
@@ -320,9 +322,42 @@ with contact_col3:
     st.markdown("📧 sameer49@geca.ac.in")
     st.markdown("📧 sbmungase2003@gmail.com")
 
+st.header("Contact Me")
+with st.form("contact_form"):
+    name = st.text_input("Your Name")
+    email = st.text_input("Your Email")
+    message = st.text_area("Your Message")
+    submit = st.form_submit_button("Send Message")
+
 # Footer
 st.markdown("---")
 st.markdown(
     "<p style='text-align: center; color: grey;'>© 2024 Sameer Mungase. All rights reserved.</p>", 
     unsafe_allow_html=True
 )
+
+st.markdown("---")
+with st.container():
+    col1, col2, col3 = st.columns([1,2,1])
+    with col2:
+        st.download_button(
+            label="📄 Download Resume",
+            data="https://drive.google.com/file/d/1VlQ1vKi-lcwDacUhYAxJKOaz_fPPWPLI/view?usp=drive_link",
+            file_name="Sameer_Mungase_Resume.pdf",
+            mime="application/pdf"
+        )
+
+st.markdown("---")
+st.header("📅 Timeline")
+st.markdown("""
+<div class="timeline">
+    <div class="timeline-item">
+        <h4>2025</h4>
+        <p>Tech Mahindra Internship</p>
+    </div>
+    <div class="timeline-item">
+        <h4>2024</h4>
+        <p>CodeAlpha Internship</p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
