@@ -83,7 +83,7 @@ st.markdown("""
         transform: translateY(-2px);
     }
     .download-button {
-        background: linear-gradient(45deg, #7F00FF, #ff4b4b);
+        background: linear-gradient(45deg, #FF5C58, #FF9F59);
         color: white;
         padding: 15px 30px;
         border-radius: 25px;
@@ -93,14 +93,14 @@ st.markdown("""
         margin-top: 25px;
         transition: all 0.3s ease;
         border: none;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.2);
         font-size: 16px;
         text-transform: uppercase;
         letter-spacing: 1px;
     }
     .download-button:hover {
-        background: linear-gradient(45deg, #ff4b4b, #7F00FF);
-        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        background: linear-gradient(45deg, #FF9F59, #FF5C58);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.3);
         transform: translateY(-3px);
     }
     .download-button svg {
