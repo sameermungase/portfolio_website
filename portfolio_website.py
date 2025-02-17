@@ -52,34 +52,44 @@ def skills_section():
     
     tech_col1, tech_col2, tech_col3 = st.columns(3)
     
-    skills_data = {
-        "Programming Languages": {
-            "icon": "💻",
-            "items": ["Java", "SQL", "JavaScript (Basic)", "HTML/CSS"]
-        },
-        "Tools & Technologies": {
-            "icon": "🛠️",
-            "items": ["Linux", "Git & GitHub", "AWS", "JetBrains IntelliJ IDEA"]
-        },
-        "Hobbies": {
-            "icon": "🎯",
-            "items": ["Mobile Photography", "Reading", "Listening to Music", "Learning New Skills"]
-        }
-    }
-    
-    columns = [tech_col1, tech_col2, tech_col3]
-    for (title, data), col in zip(skills_data.items(), columns):
-        with col:
-            render_skills_card(title, data["icon"], data["items"])
+    with tech_col1:
+        st.markdown("""
+        <div class="skills-card">
+            <h4>💻 Programming Languages</h4>
+            <ul>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>JavaScript (Basic)</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
 
-def render_skills_card(title, icon, items):
-    items_html = "\n".join([f"<li>{item}</li>" for item in items])
-    st.markdown(f"""
-    <div class="skills-card">
-        <h4>{icon} {title}</h4>
-        <ul>{items_html}</ul>
-    </div>
-    """, unsafe_allow_html=True)
+    with tech_col2:
+        st.markdown("""
+        <div class="skills-card">
+            <h4>🛠️ Tools & Technologies</h4>
+            <ul>
+                <li>Linux</li>
+                <li>Git & GitHub</li>
+                <li>AWS</li>
+                <li>JetBrains IntelliJ IDEA</li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with tech_col3:
+        st.markdown("""
+        <div class="skills-card">
+            <h4>🎯 Hobbies</h4>
+            <ul>
+                <li>Mobile Photography</li>
+                <li>Reading</li>
+                <li>Listening to Music</li>
+                <li>Learning New Skills</li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
 
 # Experience Section
 def experience_section():
