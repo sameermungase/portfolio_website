@@ -1,4 +1,3 @@
-
 import google.generativeai as genai
 # import os
 import streamlit as st
@@ -260,6 +259,68 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Add this CSS for modern gradient headings
+st.markdown("""
+    <style>
+    /* Modern Gradient Headings */
+    .header-main {
+        background: linear-gradient(120deg, #FF6B6B, #4ECDC4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .skills-header {
+        background: linear-gradient(120deg, #A8E6CF, #3BB4C1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .experience-header {
+        background: linear-gradient(120deg, #FFD93D, #FF6B6B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .projects-header {
+        background: linear-gradient(120deg, #6C63FF, #FF6584);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .college-header {
+        background: linear-gradient(120deg, #45B7D1, #DFBFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .timeline-header {
+        background: linear-gradient(120deg, #FF9A9E, #FAD0C4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .education-header {
+        background: linear-gradient(120deg, #96E6A1, #D4FC79);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .contact-header {
+        background: linear-gradient(120deg, #FD6E6A, #FFC600);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # API Configuration
 api_key = st.secrets["GOOGLE_API_KEY"]
 # api_key =""
@@ -341,7 +402,7 @@ with st.expander("Chat with Sameer's AI Assistant"):
 
 # Skills Section
 st.markdown("---")
-st.header("🚀 Skills & Technologies")
+st.markdown('<h2 class="skills-header">🚀 Skills & Technologies</h2>', unsafe_allow_html=True)
 
 # Create three columns for different skill categories
 tech_col1, tech_col2, tech_col3 = st.columns(3)
@@ -379,7 +440,7 @@ with tech_col3:
 
 # Experience Section
 st.markdown("---")
-st.header("💼 Experience")
+st.markdown('<h2 class="experience-header">💼 Experience</h2>', unsafe_allow_html=True)
 
 # Software Development Intern
 st.markdown("""
@@ -409,7 +470,7 @@ st.markdown("""
 
 # Projects Section
 st.markdown("---")
-st.header("🛠️ My Projects")
+st.markdown('<h2 class="projects-header">🛠️ My Projects</h2>', unsafe_allow_html=True)
 
 # SplitBook Project
 st.markdown("""
@@ -457,12 +518,12 @@ for project in electronics_projects:
 
 # College Section
 st.markdown("---")
-st.header("🎓 My College")
+st.markdown('<h2 class="college-header">🎓 My College</h2>', unsafe_allow_html=True)
 st.image("imagee/geca.jpeg", use_container_width=True)
 
-# Timeline Section (moved here)
+# Timeline Section
 st.markdown("---")
-st.header("📅 Timeline")
+st.markdown('<h2 class="timeline-header">📅 Timeline</h2>', unsafe_allow_html=True)
 st.markdown("""
 <style>
 .timeline-item {
@@ -514,7 +575,7 @@ st.markdown("""
 
 # Education Section
 st.markdown("---")
-st.header("📚 Education")
+st.markdown('<h2 class="education-header">📚 Education</h2>', unsafe_allow_html=True)
 
 # B.Tech
 st.markdown("""
@@ -548,7 +609,7 @@ st.markdown("""
 
 # Contact Section
 st.markdown("---")
-st.header("📫 Get in Touch")
+st.markdown('<h2 class="contact-header">📫 Get in Touch</h2>', unsafe_allow_html=True)
 contact_col1, contact_col2, contact_col3 = st.columns(3)
 
 with contact_col1:
