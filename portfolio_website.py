@@ -103,19 +103,37 @@ with st.expander("Chat with Sameer's AI Assistant"):
 
 # Skills Section
 st.markdown("---")
-st.header("🚀 My Skills")
-skills_col1, skills_col2 = st.columns(2)
+st.header("🚀 Skills & Technologies")
 
-with skills_col1:
-    st.subheader("Technical Skills")
-    st.progress(70, "DSA")
-    st.progress(80, "Core Java")
-    st.progress(75, "Linux")
-    
-with skills_col2:
-    st.subheader("Other Skills")
-    st.progress(50, "Python")
-    st.progress(50, "Computer Networks")
+# Create three columns for different skill categories
+tech_col1, tech_col2, tech_col3 = st.columns(3)
+
+with tech_col1:
+    st.markdown("""
+    #### 💻 Programming Languages
+    - Java
+    - SQL
+    - JavaScript (Basic)
+    - HTML/CSS
+    """)
+
+with tech_col2:
+    st.markdown("""
+    #### 🛠️ Tools & Technologies
+    - Linux
+    - Git & GitHub
+    - AWS
+    - JetBrains IntelliJ IDEA
+    """)
+
+with tech_col3:
+    st.markdown("""
+    #### 🎯 Hobbies
+    - Mobile Photography
+    - Reading
+    - Listening to Music
+    - Learning New Skills
+    """)
 
 # Experience Section
 st.markdown("---")
@@ -166,7 +184,7 @@ st.markdown("""
 # Hotel Management System
 st.markdown("""
 <div>
-    <h4>🏨 <a href="https://github.com/sameermungase/Hotel-Management-System" target="_blank">Hotel Management System</a></h4>
+    <h4>🏨 <a href="https://github.com/sameermungase/codealpha_tasks.git" target="_blank">Hotel Management System</a></h4>
     <p>Implemented a hotel management system using the java frameworks and core java concepts in which added 
     important features like check room availability, make reservations, payment processing, etc. Gained hands-on 
     experience in real-time data handling and applied core programming concepts effectively.</p>
@@ -218,7 +236,7 @@ with contact_col2:
 with contact_col3:
     st.markdown("#### Email")
     st.markdown("📧 sameer49@geca.ac.in")
-    st.markdown("📧 snwopierce111@gmail.com")
+    st.markdown("📧 sbmungase2003@gmail.com")
 
 # Footer
 st.markdown("---")
