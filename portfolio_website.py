@@ -27,7 +27,7 @@ st.markdown("""
         margin: 10px 0;
     }
     .project-card {
-        background-color: #f0f2f6;
+        background-color:rgb(243, 112, 140);
         padding: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
@@ -129,7 +129,7 @@ st.markdown("""
 
     /* Project Cards */
     .project-card {
-        background: linear-gradient(145deg, #ffffff, #f5f5f5);
+        background: linear-gradient(145deg,rgb(218, 85, 85), #f5f5f5);
         border-radius: 20px;
         padding: 25px;
         margin: 20px 0;
@@ -330,7 +330,6 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 # Header Section
 header_col1, header_col2 = st.columns([2, 1])
 with header_col1:
-    st.markdown('<p class="greeting">Hello there! 👋</p>', unsafe_allow_html=True)
     st.markdown('<h1 class="name-title">I\'m Sameer Mungase</h1>', unsafe_allow_html=True)
     st.markdown("""
         🎓 Electronics & Telecommunication Engineering Student  
