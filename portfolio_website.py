@@ -41,7 +41,7 @@ st.markdown("""
         font-size: 0.9em;
     }
     a {
-        color: #ff4b4b;
+        color: #7F00FF;
         text-decoration: none;
     }
     a:hover {
