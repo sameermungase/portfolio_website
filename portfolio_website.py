@@ -669,102 +669,91 @@ st.markdown("""
         --card-bg: #ffffff;
     }
 
+    /* Skills Cards */
+    .skills-card {
+        background: linear-gradient(145deg, #ffffff, #fff5f5);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px 0;
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    }
+    .skills-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
+    }
+    .skills-card h4 {
+        color: #FF5C58;
+    }
+    .skills-card ul li {
+        color: #2C3E50;
+    }
+
     /* Project Cards */
     .project-card {
-        background: var(--card-bg);
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
         border-radius: 20px;
         padding: 25px;
         margin: 20px 0;
-        border-left: 4px solid var(--primary-color);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
     }
     .project-card:hover {
         transform: translateX(10px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #ffe5e5, #ffd5d5);
     }
     .project-card h4 {
-        color: var(--primary-color);
-        font-size: 1.3rem;
-        margin-bottom: 15px;
+        color: #FF5C58;
     }
     .project-card p {
-        color: var(--text-dark);
-        line-height: 1.6;
+        color: #2C3E50;
     }
 
     /* Experience Cards */
     .experience-item {
-        background: var(--card-bg);
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
         border-radius: 15px;
         padding: 25px;
         margin: 20px 0;
-        border-left: 4px solid var(--accent-color);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    }
+    .experience-item:hover {
+        transform: translateX(10px);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #ffe5e5, #ffd5d5);
     }
     .experience-item h4 {
-        color: var(--accent-color);
+        color: #FF5C58;
     }
     .experience-item p, .experience-item li {
-        color: var(--text-dark);
-    }
-
-    /* Skills Cards */
-    .skills-card {
-        background: var(--card-bg);
-        border-radius: 15px;
-        padding: 20px;
-        margin: 10px 0;
-        border-left: 4px solid var(--secondary-color);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-    .skills-card h4 {
-        color: var(--secondary-color);
-    }
-    .skills-card ul {
-        color: var(--text-dark);
-        list-style-type: none;
-        padding-left: 0;
-    }
-    .skills-card li {
-        padding: 5px 0;
-        color: var(--text-dark);
-    }
-
-    /* Timeline Items */
-    .timeline-item {
-        background: var(--card-bg);
-        border-radius: 15px;
-        padding: 20px;
-        margin: 15px 0;
-        border-left: 4px solid var(--secondary-color);
-    }
-    .timeline-item::before {
-        background: var(--gradient-1);
-    }
-    .timeline-item h4 {
-        color: var(--secondary-color);
-    }
-    .timeline-item p {
-        color: var(--text-dark);
+        color: #2C3E50;
     }
 
     /* Education Cards */
     .education-item {
-        background: var(--card-bg);
+        background: linear-gradient(145deg, #fff5f5, #ffe5e5);
         border-radius: 15px;
         padding: 25px;
         margin: 20px 0;
-        border-left: 4px solid var(--primary-color);
+        border-left: 4px solid #FF5C58;
+        box-shadow: 0 4px 15px rgba(255, 92, 88, 0.1);
+    }
+    .education-item:hover {
+        transform: translateX(10px);
+        box-shadow: 0 6px 20px rgba(255, 92, 88, 0.2);
+        background: linear-gradient(145deg, #ffe5e5, #ffd5d5);
     }
     .education-item h4 {
-        color: var(--primary-color);
+        color: #FF5C58;
     }
     .education-item p {
-        color: var(--text-dark);
+        color: #2C3E50;
     }
     .education-item .percentage {
-        color: var(--accent-color);
+        color: #FF5C58;
         font-weight: bold;
     }
 
