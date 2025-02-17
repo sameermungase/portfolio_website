@@ -148,16 +148,38 @@ st.markdown("""
 
     /* Experience Cards */
     .experience-item {
-        background: linear-gradient(145deg, #ffffff, #f8f9fa);
+        background: #ffffff;
         border-radius: 15px;
         padding: 25px;
         margin: 20px 0;
-        border-left: 4px solid #ff4b4b;
+        border-left: 4px solid #FF6B6B;
         box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
     .experience-item:hover {
         transform: translateX(10px);
         box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .experience-item h4 {
+        color: #FF6B6B;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .experience-item p {
+        color: #2C3E50;
+        margin: 8px 0;
+    }
+    .experience-item em {
+        color: #666;
+        font-style: italic;
+    }
+    .experience-item ul {
+        color: #2C3E50;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    .experience-item li {
+        margin: 8px 0;
+        line-height: 1.5;
     }
 
     /* Timeline Enhancement */
