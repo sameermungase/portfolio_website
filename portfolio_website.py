@@ -445,48 +445,6 @@ with tech_col3:
     </div>
     """, unsafe_allow_html=True)
 
-# Electronics Projects Section (also updated to use card styling)
-st.markdown("""
-<div class="skills-card">
-    <h4>⚡ Electronics Projects</h4>
-    <ul>
-        <li>Home Appliances Automation</li>
-        <li>Trinetra - Visual Aid Device</li>
-        <li>Smart Blind Stick</li>
-    </ul>
-</div>
-""", unsafe_allow_html=True)
-
-# Experience Section
-st.markdown("---")
-st.markdown('<h2 class="experience-header">💼 Experience</h2>', unsafe_allow_html=True)
-
-# Software Development Intern
-st.markdown("""
-<div class="experience-item">
-    <h4>Software Development and AIML Intern | Makers Lab, Tech Mahindra - Pune</h4>
-    <p><em>Jan 2025 - Present</em></p>
-    <ul>
-        <li>Currently working as a development trainee with a focus on Java programming and basic development tasks</li>
-        <li>Acquired hands-on experience in Java programming, debugging, and understanding core development workflows</li>
-        <li>Developing expertise in software lifecycle management, professional coding practices, and JavaScript development</li>
-    </ul>
-</div>
-""", unsafe_allow_html=True)
-
-# Java Programming Intern
-st.markdown("""
-<div class="experience-item">
-    <h4>Java Programming Intern | Codealpha - Virtual</h4>
-    <p><em>June 2024 - Aug 2024</em></p>
-    <ul>
-        <li>Gained hands-on experience in Java development and core java concepts during my internship</li>
-        <li>Successfully contributed to projects by implementing Java concepts like Collection Framework, Object Oriented Programming and more</li>
-        <li>Learned about benefits of learning in public and how to use platforms like Git, GitHub which are version control systems</li>
-    </ul>
-</div>
-""", unsafe_allow_html=True)
-
 # Projects Section
 st.markdown("---")
 st.markdown('<h2 class="projects-header">🛠️ My Projects</h2>', unsafe_allow_html=True)
@@ -522,6 +480,48 @@ st.markdown("""
     with OTP authentication, and allows users to hide and unhide files securely. The application interacts with a 
     MySQL database to store user and file data, ensuring data integrity and security.</p>
     <p class="tools"><strong>Tools Used:</strong> Java, JavaFX, MySQL, Maven, SMTP API</p>
+</div>
+""", unsafe_allow_html=True)
+
+# Electronics Projects Section (moved here)
+st.markdown('<h3 class="subsection-header">⚡ Electronics Projects</h3>', unsafe_allow_html=True)
+st.markdown("""
+<div class="project-card">
+    <ul>
+        <li>Home Appliances Automation</li>
+        <li>Trinetra - Visual Aid Device</li>
+        <li>Smart Blind Stick</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
+
+# Experience Section
+st.markdown("---")
+st.markdown('<h2 class="experience-header">💼 Experience</h2>', unsafe_allow_html=True)
+
+# Software Development Intern
+st.markdown("""
+<div class="experience-item">
+    <h4>Software Development and AIML Intern | Makers Lab, Tech Mahindra - Pune</h4>
+    <p><em>Jan 2025 - Present</em></p>
+    <ul>
+        <li>Currently working as a development trainee with a focus on Java programming and basic development tasks</li>
+        <li>Acquired hands-on experience in Java programming, debugging, and understanding core development workflows</li>
+        <li>Developing expertise in software lifecycle management, professional coding practices, and JavaScript development</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
+
+# Java Programming Intern
+st.markdown("""
+<div class="experience-item">
+    <h4>Java Programming Intern | Codealpha - Virtual</h4>
+    <p><em>June 2024 - Aug 2024</em></p>
+    <ul>
+        <li>Gained hands-on experience in Java development and core java concepts during my internship</li>
+        <li>Successfully contributed to projects by implementing Java concepts like Collection Framework, Object Oriented Programming and more</li>
+        <li>Learned about benefits of learning in public and how to use platforms like Git, GitHub which are version control systems</li>
+    </ul>
 </div>
 """, unsafe_allow_html=True)
 
