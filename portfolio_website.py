@@ -83,22 +83,29 @@ st.markdown("""
         transform: translateY(-2px);
     }
     .download-button {
-        background-color: #ff4b4b;
+        background: linear-gradient(45deg, #7F00FF, #ff4b4b);
         color: white;
-        padding: 12px 24px;
-        border-radius: 8px;
+        padding: 15px 30px;
+        border-radius: 25px;
         text-decoration: none;
         font-weight: bold;
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 25px;
         transition: all 0.3s ease;
         border: none;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
     .download-button:hover {
-        background-color: #ff3333;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        transform: translateY(-2px);
+        background: linear-gradient(45deg, #ff4b4b, #7F00FF);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        transform: translateY(-3px);
+    }
+    .download-button svg {
+        margin-right: 8px;
+        vertical-align: middle;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -121,36 +128,15 @@ with header_col1:
         🌟 Always eager to learn and grow
     """)
     
-    # Add custom CSS for the download button
-    st.markdown("""
-        <style>
-        .download-button {
-            background-color: #ff4b4b;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-            border: none;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .download-button:hover {
-            background-color: #ff3333;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transform: translateY(-2px);
-        }
-        </style>
-    """, unsafe_allow_html=True)
-    
-    # Download Resume Button
+    # Updated Download Resume Button with icon
     st.markdown("""
         <a href="https://drive.google.com/file/d/1VlQ1vKi-lcwDacUhYAxJKOaz_fPPWPLI/view?usp=drive_link" 
            class="download-button" 
            target="_blank">
-           📄 Download Resume
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+               <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
+           </svg>
+           Download Resume
         </a>
     """, unsafe_allow_html=True)
 
