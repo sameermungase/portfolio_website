@@ -166,7 +166,7 @@ st.markdown("""
 
 # SplitBook Project
 st.markdown("""
-<div class="project-card">
+<div>
     <h4>🔄 SplitBook - Expense Management System</h4>
     <p>SplitBook is a comprehensive expense management system designed to simplify the process of tracking and 
     splitting expenses among multiple users. The application features a user-friendly dashboard for real-time 
@@ -178,7 +178,7 @@ st.markdown("""
 
 # Hotel Management System
 st.markdown("""
-<div class="project-card">
+<div>
     <h4>🏨 Hotel Management System</h4>
     <p>Implemented a hotel management system using the java frameworks and core java concepts in which added 
     important features like check room availability, make reservations, payment processing, etc. Gained hands-on 
