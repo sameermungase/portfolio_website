@@ -49,12 +49,17 @@ st.markdown("""
         padding: 20px;
         margin: 10px 0;
         border-left: 3px solid #ff4b4b;
-        background-color: #f8f9fa;
+        background-color: #ffffff;
         border-radius: 0 10px 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .education-item h4 {
         color: #ff4b4b;
         margin-bottom: 5px;
+    }
+    .education-item p {
+        color: #2c3e50;
+        margin: 5px 0;
     }
     .education-item .percentage {
         color: #0066cc;
@@ -249,27 +254,6 @@ st.image("imagee/geca.jpeg", use_container_width=True)
 # Education Section
 st.markdown("---")
 st.header("📚 Education")
-
-# Add custom CSS for education cards
-st.markdown("""
-    <style>
-    .education-item {
-        padding: 20px;
-        margin: 10px 0;
-        border-left: 3px solid #ff4b4b;
-        background-color: #f8f9fa;
-        border-radius: 0 10px 10px 0;
-    }
-    .education-item h4 {
-        color: #ff4b4b;
-        margin-bottom: 5px;
-    }
-    .education-item .percentage {
-        color: #0066cc;
-        font-weight: bold;
-    }
-    </style>
-""", unsafe_allow_html=True)
 
 # B.Tech
 st.markdown("""
