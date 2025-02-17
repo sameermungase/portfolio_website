@@ -82,6 +82,24 @@ st.markdown("""
         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         transform: translateY(-2px);
     }
+    .download-button {
+        background-color: #ff4b4b;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .download-button:hover {
+        background-color: #ff3333;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transform: translateY(-2px);
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -102,6 +120,40 @@ with header_col1:
         💻 Passionate about Programming & Development   
         🌟 Always eager to learn and grow
     """)
+    
+    # Add custom CSS for the download button
+    st.markdown("""
+        <style>
+        .download-button {
+            background-color: #ff4b4b;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .download-button:hover {
+            background-color: #ff3333;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+        </style>
+    """, unsafe_allow_html=True)
+    
+    # Download Resume Button
+    st.markdown("""
+        <a href="https://drive.google.com/file/d/1VlQ1vKi-lcwDacUhYAxJKOaz_fPPWPLI/view?usp=drive_link" 
+           class="download-button" 
+           target="_blank">
+           📄 Download Resume
+        </a>
+    """, unsafe_allow_html=True)
+
 with header_col2:
     st.image("imagee/sam.jpg", width=250)
 
@@ -335,17 +387,6 @@ st.markdown(
     "<p style='text-align: center; color: grey;'>© 2024 Sameer Mungase. All rights reserved.</p>", 
     unsafe_allow_html=True
 )
-
-st.markdown("---")
-with st.container():
-    col1, col2, col3 = st.columns([1,2,1])
-    with col2:
-        st.download_button(
-            label="📄 Download Resume",
-            data="https://drive.google.com/file/d/1VlQ1vKi-lcwDacUhYAxJKOaz_fPPWPLI/view?usp=drive_link",
-            file_name="Sameer_Mungase_Resume.pdf",
-            mime="application/pdf"
-        )
 
 st.markdown("---")
 st.header("📅 Timeline")
