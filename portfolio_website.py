@@ -189,7 +189,7 @@ st.markdown("""
 
 # FileGuard Project
 st.markdown("""
-<div class="project-card">
+<div>
     <h4>🔒 FileGuard - File Encryption System</h4>
     <p>FileGuard is a Java-based application designed for managing hidden files. It features user registration and login 
     with OTP authentication, and allows users to hide and unhide files securely. The application interacts with a 
