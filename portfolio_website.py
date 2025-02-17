@@ -798,3 +798,45 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+# Update the CSS for headers and subheaders
+st.markdown("""
+    <style>
+    /* Headers and Subheaders */
+    .header-text, .subheader-text {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    /* Override Streamlit's default blue headers */
+    .css-10trblm, .css-1q8dd3e {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        font-weight: 700 !important;
+    }
+
+    /* Specific header styles */
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4 {
+        background: linear-gradient(45deg, #FF5C58, #FF9F59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    /* Links in headers */
+    .stMarkdown a {
+        color: #FF5C58;
+    }
+    .stMarkdown a:hover {
+        color: #FF9F59;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Update any direct header calls to use the new classes
+st.markdown('<h3 class="header-text">💻 Programming Languages</h3>', unsafe_allow_html=True)
+st.markdown('<h3 class="header-text">🛠️ Tools & Technologies</h3>', unsafe_allow_html=True)
+st.markdown('<h3 class="header-text">🎯 Hobbies</h3>', unsafe_allow_html=True)
