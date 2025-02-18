@@ -352,51 +352,44 @@ with header_col1:
 with header_col2:
     st.image("imagee/sam.jpg", width=250)
 
-# AI Chatbot Section
+# About Me Section
 st.markdown("---")
-st.markdown('<h2 class="chat-header">💬 Let\'s Chat!</h2>', unsafe_allow_html=True)
-with st.expander("Chat with Sameer's AI Assistant"):
-    persona = """
-        You are Sameer AI bot. You help people answer questions about your self (i.e Sameer Mungase).
-        Answer as if you are responding . dont answer in second or third person.
-        If you don't know they answer you simply say "That's a secret"
-        Here is more info about Sameer: 
-         
-        Sameer Mungase is an Undergraduate Student in the field of Electronics and telecommunication engineering at Government college 
-        of engineering , Chatrapati Sambhaji Nagar(Aurangabad)
-        Sameer is also interested in programming and DSA in java and also started learning python. Sameer is obtaining his Bachelor's degree in
-        Electronics and Telecommunication and later specializing in the field of computer scienc. 
-        Sameer is also interested in the field of computer vision . Sameer is also 
-        working on his core java skills and Development skills . Sameer is  also preparing for the placements in the field of software 
-        engineering , and core electronics companies also ,
-        for that he is preparing for interviews , soft skills also with general aptitude also,he is also currently working at Tech Mahindra as a Technical support Trainee.
-        These are some languages and Technologies that Sameer has worked on:
-        - Java
-        - Python
-        - C++
-        - SQL
-        - HTML/CSS
-        - JavaScript
-        - Linux
-        - Git & GitHub
-        - AWS
-        - JetBrains IntelliJ IDEA
-        - Eclipse IDE
-        - Visual Studio Code
-        - MySQL
- 
-        
-        Sameer's Email: sbmungase2003@gmail.com
-        Sameer's Instagram: https://www.instagram.com/sameer_mungase?utm_source=qr&igsh=dWs3N2QyNTA0OXls
-        Sameer's Linkdin: https://www.linkedin.com/in/sameer-mungase-b341b6286/
-        Sameer's Github :https://github.com/sameermungase
-        """
-    user_question = st.text_input("Ask me anything about Sameer:", placeholder="Example: What are Sameer's interests?")
-    if st.button("Ask", type="primary", use_container_width=True):
-        with st.spinner("Thinking..."):
-            prompt = persona + "Here is the question that the user asked: " + user_question
-            response = model.generate_content(prompt)
-            st.write(response.text)
+st.markdown('<h2 class="about-header">👨‍💻 About Me</h2>', unsafe_allow_html=True)
+st.markdown("""
+    I'm a passionate Electronics and Telecommunication Engineering student with a keen interest in software development 
+    and emerging technologies. Currently pursuing my B.Tech at Government College of Engineering, Aurangabad, 
+    I combine my hardware knowledge with software expertise to create innovative solutions.
+""")
+
+# Experience Section
+st.markdown("---")
+st.markdown('<h2 class="experience-header">💼 Experience</h2>', unsafe_allow_html=True)
+
+# Software Development Intern
+st.markdown("""
+<div class="experience-item">
+    <h4>Software Development and AIML Intern | Makers Lab, Tech Mahindra - Pune</h4>
+    <p><em>Jan 2025 - Present</em></p>
+    <ul>
+        <li>Currently working as a development trainee with a focus on Java programming and basic development tasks</li>
+        <li>Acquired hands-on experience in Java programming, debugging, and understanding core development workflows</li>
+        <li>Developing expertise in software lifecycle management, professional coding practices, and JavaScript development</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
+
+# Java Programming Intern
+st.markdown("""
+<div class="experience-item">
+    <h4>Java Programming Intern | Codealpha - Virtual</h4>
+    <p><em>June 2024 - Aug 2024</em></p>
+    <ul>
+        <li>Gained hands-on experience in Java development and core java concepts during my internship</li>
+        <li>Successfully contributed to projects by implementing Java concepts like Collection Framework, Object Oriented Programming and more</li>
+        <li>Learned about benefits of learning in public and how to use platforms like Git, GitHub which are version control systems</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
 
 # Skills Section
 st.markdown("---")
@@ -445,7 +438,7 @@ with tech_col3:
 
 # Projects Section
 st.markdown("---")
-st.markdown('<h2 class="projects-header">🛠️ My Projects</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="projects-header">🛠️ Software Projects</h2>', unsafe_allow_html=True)
 
 # SplitBook Project
 st.markdown("""
@@ -482,7 +475,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Electronics Projects Section
-st.markdown('<h3 class="subsection-header">⚡ Electronics Projects</h3>', unsafe_allow_html=True)
+st.markdown('<h3 class="projects-header">⚡ Electronics Projects</h3>', unsafe_allow_html=True)
 st.markdown("""
 <div class="project-card">
     <h4>Electronics Hardware Projects</h4>
@@ -494,44 +487,43 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Experience Section
+# Education Section
 st.markdown("---")
-st.markdown('<h2 class="experience-header">💼 Experience</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="education-header">📚 Education</h2>', unsafe_allow_html=True)
 
-# Software Development Intern
+# B.Tech
 st.markdown("""
-<div class="experience-item">
-    <h4>Software Development and AIML Intern | Makers Lab, Tech Mahindra - Pune</h4>
-    <p><em>Jan 2025 - Present</em></p>
-    <ul>
-        <li>Currently working as a development trainee with a focus on Java programming and basic development tasks</li>
-        <li>Acquired hands-on experience in Java programming, debugging, and understanding core development workflows</li>
-        <li>Developing expertise in software lifecycle management, professional coding practices, and JavaScript development</li>
-    </ul>
+<div class="education-item">
+    <h4>Bachelor of Technology</h4>
+    <p><em>Electronics and Telecommunication Engineering (2021-2025)</em></p>
+    <p>Government College Of Engineering Aurangabad, Chhatrapati Sambhajinagar</p>
+    <p class="percentage">Percentage: 77.23%</p>
 </div>
 """, unsafe_allow_html=True)
 
-# Java Programming Intern
+# HSC
 st.markdown("""
-<div class="experience-item">
-    <h4>Java Programming Intern | Codealpha - Virtual</h4>
-    <p><em>June 2024 - Aug 2024</em></p>
-    <ul>
-        <li>Gained hands-on experience in Java development and core java concepts during my internship</li>
-        <li>Successfully contributed to projects by implementing Java concepts like Collection Framework, Object Oriented Programming and more</li>
-        <li>Learned about benefits of learning in public and how to use platforms like Git, GitHub which are version control systems</li>
-    </ul>
+<div class="education-item">
+    <h4>Higher Secondary Certification (HSC)</h4>
+    <p><em>2020-2021</em></p>
+    <p>Sanjivani Junior College, Kopargon</p>
+    <p class="percentage">Percentage: 87.00%</p>
 </div>
 """, unsafe_allow_html=True)
 
-# College Section
-st.markdown("---")
-st.markdown('<h2 class="college-header">🎓 My College</h2>', unsafe_allow_html=True)
-st.image("imagee/geca.jpeg", use_container_width=True)
+# SSC
+st.markdown("""
+<div class="education-item">
+    <h4>Secondary School Certification (SSC)</h4>
+    <p><em>2018-2019</em></p>
+    <p>Janata Vidyalaya Yeola</p>
+    <p class="percentage">Percentage: 92.80%</p>
+</div>
+""", unsafe_allow_html=True)
 
 # Timeline Section
 st.markdown("---")
-st.markdown('<h2 class="timeline-header">📅 Timeline</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="timeline-header">📅 My Journey</h2>', unsafe_allow_html=True)
 st.markdown("""
 <style>
 .timeline-item {
@@ -581,39 +573,56 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Education Section
+# College Section
 st.markdown("---")
-st.markdown('<h2 class="education-header">📚 Education</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="college-header">🎓 My College</h2>', unsafe_allow_html=True)
+st.image("imagee/geca.jpeg", use_container_width=True)
 
-# B.Tech
-st.markdown("""
-<div class="education-item">
-    <h4>Bachelor of Technology</h4>
-    <p><em>Electronics and Telecommunication Engineering (2021-2025)</em></p>
-    <p>Government College Of Engineering Aurangabad, Chhatrapati Sambhajinagar</p>
-    <p class="percentage">Percentage: 77.23%</p>
-</div>
-""", unsafe_allow_html=True)
-
-# HSC
-st.markdown("""
-<div class="education-item">
-    <h4>Higher Secondary Certification (HSC)</h4>
-    <p><em>2020-2021</em></p>
-    <p>Sanjivani Junior College, Kopargon</p>
-    <p class="percentage">Percentage: 87.00%</p>
-</div>
-""", unsafe_allow_html=True)
-
-# SSC
-st.markdown("""
-<div class="education-item">
-    <h4>Secondary School Certification (SSC)</h4>
-    <p><em>2018-2019</em></p>
-    <p>Janata Vidyalaya Yeola</p>
-    <p class="percentage">Percentage: 92.80%</p>
-</div>
-""", unsafe_allow_html=True)
+# AI Chatbot Section
+st.markdown("---")
+st.markdown('<h2 class="chat-header">💬 Let\'s Chat!</h2>', unsafe_allow_html=True)
+with st.expander("Chat with Sameer's AI Assistant"):
+    persona = """
+        You are Sameer AI bot. You help people answer questions about your self (i.e Sameer Mungase).
+        Answer as if you are responding . dont answer in second or third person.
+        If you don't know they answer you simply say "That's a secret"
+        Here is more info about Sameer: 
+         
+        Sameer Mungase is an Undergraduate Student in the field of Electronics and telecommunication engineering at Government college 
+        of engineering , Chatrapati Sambhaji Nagar(Aurangabad)
+        Sameer is also interested in programming and DSA in java and also started learning python. Sameer is obtaining his Bachelor's degree in
+        Electronics and Telecommunication and later specializing in the field of computer scienc. 
+        Sameer is also interested in the field of computer vision . Sameer is also 
+        working on his core java skills and Development skills . Sameer is  also preparing for the placements in the field of software 
+        engineering , and core electronics companies also ,
+        for that he is preparing for interviews , soft skills also with general aptitude also,he is also currently working at Tech Mahindra as a Technical support Trainee.
+        These are some languages and Technologies that Sameer has worked on:
+        - Java
+        - Python
+        - C++
+        - SQL
+        - HTML/CSS
+        - JavaScript
+        - Linux
+        - Git & GitHub
+        - AWS
+        - JetBrains IntelliJ IDEA
+        - Eclipse IDE
+        - Visual Studio Code
+        - MySQL
+ 
+        
+        Sameer's Email: sbmungase2003@gmail.com
+        Sameer's Instagram: https://www.instagram.com/sameer_mungase?utm_source=qr&igsh=dWs3N2QyNTA0OXls
+        Sameer's Linkdin: https://www.linkedin.com/in/sameer-mungase-b341b6286/
+        Sameer's Github :https://github.com/sameermungase
+        """
+    user_question = st.text_input("Ask me anything about Sameer:", placeholder="Example: What are Sameer's interests?")
+    if st.button("Ask", type="primary", use_container_width=True):
+        with st.spinner("Thinking..."):
+            prompt = persona + "Here is the question that the user asked: " + user_question
+            response = model.generate_content(prompt)
+            st.write(response.text)
 
 # Contact Section
 st.markdown("---")
