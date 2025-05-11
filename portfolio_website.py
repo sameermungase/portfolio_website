@@ -497,7 +497,7 @@ st.markdown("""
     <h4>Bachelor of Technology</h4>
     <p><em>Electronics and Telecommunication Engineering (2021-2025)</em></p>
     <p>Government College Of Engineering Aurangabad, Chhatrapati Sambhajinagar</p>
-    <p class="percentage">Percentage: 77.23%</p>
+    <p class="percentage">Percentage: 78.33%</p>
 </div>
 """, unsafe_allow_html=True)
 
